@@ -8,7 +8,7 @@ The pipeline requires the following parameters to be defined:
 
 | Name | type | Default | Required/Optional | Comments |
 | :-------------: | :-------------: | ------------- | :-------------: | :-------------: |
-| filePath | string | $(Build.SourcesDirectory) | Required | define the filepath or working directory for package.json. Youc can also pass arguements  if required |
+| filePath | String | $(Build.SourcesDirectory) | Required | define the filepath or working directory for package.json. Youc can also pass arguements  if required |
 | npmInstall | String | install  | Optional | another common value used is **ci** |
 
 
