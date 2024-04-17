@@ -1,0 +1,17 @@
+parameters:
+  - name: npmInstall
+    type: string
+    default: install
+
+  - name: filePath
+    type: string
+    default: '$(Build.SourcesDirectory)'
+
+
+steps:
+
+  - task: Npm@1
+    inputs:
+      command: '${{parameters.npmInstall}}'
+      workingDir: '${{parameters.filePath}}'
+    displayName: 'Install Dependencies'
